@@ -79,17 +79,18 @@
 			.presents {
 				max-width: 100%;
 				display: flex;
+        align-items: center;
 				.skull {
-          max-width: 80px;
+          // max-width: 80px;
           height: 80px;
 					flex: 0 1 80px;
 				}
 				.tcwp {
-					flex: 1 1 0;
+					flex: 1 1 auto;
 					width: 100%;
-          max-width: 100%;
+          max-width: 700px;
 					padding: rem(10px);
-          height: auto;
+          // height: auto;
 				}
 			}
 
