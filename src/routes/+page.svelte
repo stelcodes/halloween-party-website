@@ -12,6 +12,7 @@
 		<!-- <img class="divider" alt="barbed wire" src="./images/barbed-wire-divider.png" /> -->
 		<img class="hell" alt="hell" src="./images/hell.gif" />
 		<div class="abh">@ bitch house</div>
+		<img class="bones-divider" src="./images/bones-divider.png" alt="bones" />
 	</header>
 	<main>
 		<h1>hell at bitch house</h1>
@@ -84,7 +85,7 @@
 					@media (max-width: 600px) {
 						& {
 							flex: 0 1 60px;
-              height: 60px;
+							height: 60px;
 						}
 					}
 				}
@@ -104,8 +105,13 @@
 			.abh {
 				font-family: cursive;
 				font-size: rem(22px);
-				padding: rem(16px);
+				padding: rem(16px) 0 0 0;
+        margin-bottom: -10px;
 			}
+
+      .bones-divider {
+        max-width: 100%;
+      }
 		}
 
 		main {
