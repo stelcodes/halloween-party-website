@@ -4,8 +4,12 @@
 
 <div class="app-container">
 	<header>
-		<img class="tcwp" alt="the collective womb presents" src="./images/tcwp.gif" />
-    <img class="divider" alt="barbed wire" src="./images/barbed-wire-divider.png" />
+		<div class="presents">
+			<img class="skull" alt="skull" src="./images/skull-spin.gif" />
+			<img class="tcwp" alt="the collective womb presents" src="./images/tcwp.gif" />
+			<img class="skull" alt="skull" src="./images/skull-spin.gif" />
+		</div>
+		<!-- <img class="divider" alt="barbed wire" src="./images/barbed-wire-divider.png" /> -->
 		<img class="hell" alt="hell" src="./images/hell.gif" />
 		<div class="abh">@ bitch house</div>
 	</header>
@@ -52,13 +56,15 @@
 		min-height: 100vh;
 		color: white;
 		cursor: url('https://cur.cursors-4u.net/holidays/hol-4/hol333.png'), pointer;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-    header, main, footer {
+		header,
+		main,
+		footer {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-    }
+		}
 
 		header {
 			flex: 0 1 auto;
@@ -67,13 +73,29 @@
 			align-items: center;
 
 			img {
+				// max-width: 100%;
+        display: block;
+			}
+			.presents {
 				max-width: 100%;
+				display: flex;
+				.skull {
+          max-width: 80px;
+          height: 80px;
+					flex: 0 1 80px;
+				}
+				.tcwp {
+					flex: 1 1 0;
+					width: 100%;
+          max-width: 100%;
+					padding: rem(10px);
+          height: auto;
+				}
 			}
 
-			.tcwp {
-				width: 800px;
-				padding: rem(10px);
-			}
+      .hell {
+        max-width: 100%;
+      }
 
 			.abh {
 				font-family: cursive;
@@ -87,6 +109,7 @@
 
 			h1 {
 				visibility: hidden;
+				display: none;
 			}
 
       .date {
