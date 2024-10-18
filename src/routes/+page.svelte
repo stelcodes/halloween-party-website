@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../reset.css';
+	import '98.css';
 </script>
 
 <div class="app-container">
@@ -16,9 +17,26 @@
 	</header>
 	<main>
 		<h1>hell at bitch house</h1>
-		<div class="date">
-			<p>Saturday, October 26th</p>
-			<p>8 PM - ???</p>
+		<div class="win98 window" style="width: 300px">
+			<div class="title-bar">
+				<div class="title-bar-text">Friendship Test!</div>
+				<div class="title-bar-controls">
+					<button aria-label="Minimize"></button>
+					<button aria-label="Maximize"></button>
+					<button aria-label="Close"></button>
+				</div>
+			</div>
+			<div class="window-body">
+				<p>Are you gonna come to the party?</p>
+				<section class="field-row">
+					<a href="https://youtu.be/_xJUCsyMQes?feature=shared&t=42" target="_blank">
+						<button>Ofc</button>
+					</a>
+					<a href="https://www.youtube.com/watch?v=O04nsyB8gqA" target="_blank">
+						<button>FUCK NO</button>
+					</a>
+				</section>
+			</div>
 		</div>
 	</main>
 	<footer>
@@ -49,6 +67,9 @@
 		font-style: normal;
 		font-display: swap;
 	}
+	* {
+		cursor: url('https://cur.cursors-4u.net/holidays/hol-4/hol333.png'), pointer !important;
+	}
 	.app-container {
 		display: flex;
 		flex-direction: column;
@@ -56,7 +77,6 @@
 		background-blend-mode: darken;
 		min-height: 100vh;
 		color: white;
-		cursor: url('https://cur.cursors-4u.net/holidays/hol-4/hol333.png'), pointer;
 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 		header,
@@ -122,19 +142,45 @@
 				display: none;
 			}
 
-      .date {
-        width: 700px;
-        max-width: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        margin: 0 rem(32px) rem(32px);
-        padding: rem(16px);
+			.win98 {
+				width: 500px;
+				max-width: 100%;
+				.title-bar {
+					background: linear-gradient(90deg, #400, #a60000);
+				}
+				.window-body {
+					color: black;
 
-        p {
-          font-size: rem(30px);
-          text-align: center;
-          padding: rem(4px) 0;
-        }
-      }
+					p {
+						line-height: 1.5;
+						margin: rem(16px) 0;
+					}
+
+					.field-row {
+						justify-content: flex-end;
+
+						button a {
+							color: inherit;
+							text-decoration: none;
+							cursor: default;
+						}
+					}
+				}
+			}
+
+			.date {
+				width: 700px;
+				max-width: 100%;
+				background: rgba(0, 0, 0, 0.5);
+				margin: 0 rem(32px) rem(32px);
+				padding: rem(16px);
+
+				p {
+					font-size: rem(30px);
+					text-align: center;
+					padding: rem(4px) 0;
+				}
+			}
 		}
 		footer {
 			flex: 0 0 auto;
