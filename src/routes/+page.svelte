@@ -72,31 +72,34 @@
 			flex-direction: column;
 			align-items: center;
 
-			img {
-				// max-width: 100%;
-        display: block;
-			}
 			.presents {
 				max-width: 100%;
 				display: flex;
-        align-items: center;
+				align-items: center;
 				.skull {
-          // max-width: 80px;
-          height: 80px;
+					// max-width: 80px;
+					height: 80px;
 					flex: 0 1 80px;
+
+					@media (max-width: 600px) {
+						& {
+							flex: 0 1 60px;
+              height: 60px;
+						}
+					}
 				}
 				.tcwp {
 					flex: 1 1 auto;
 					width: 100%;
-          max-width: 700px;
+					max-width: 700px;
 					padding: rem(10px);
-          // height: auto;
+					// height: auto;
 				}
 			}
 
-      .hell {
-        max-width: 100%;
-      }
+			.hell {
+				max-width: 100%;
+			}
 
 			.abh {
 				font-family: cursive;
