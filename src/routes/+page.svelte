@@ -61,8 +61,8 @@
 	</main>
 	<footer>
 		<div class="text">
-			<p>made by stel clementine</p>
-			<span>🎀</span>
+			<p>codes by <a href="mailto:hello@stelclementine.com">stel clementine</a></p>
+      <img src='./images/skull-sprite.gif' alt="pink skull"/>
 		</div>
 	</footer>
 </div>
@@ -83,6 +83,9 @@
 	* {
 		cursor: url('https://cur.cursors-4u.net/holidays/hol-4/hol333.png'), pointer !important;
 	}
+  a {
+    color: ghostwhite;
+  }
 	.app-container {
 		display: flex;
 		flex-direction: column;
@@ -244,7 +247,7 @@
 			background: rgba(0, 0, 0, 0.5);
 			color: white;
 			font-family: old-english-gothic;
-			font-size: rem(24px);
+			font-size: rem(20px);
 
 			.text {
 				display: flex;
@@ -254,6 +257,10 @@
 					padding: 0 rem(8px) rem(8px) 0;
 				}
 			}
+
+      img {
+        padding-bottom: rem(6px);
+      }
 		}
 	}
 </style>
