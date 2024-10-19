@@ -22,12 +22,12 @@
 			<p>Saturday October 26th<br />8 PM - ???</p>
 		</div>
 		<div class="attire">
-			<p>Wear a devlish costume...<br />... or be an <em>angel</em> if you dare!</p>
+			<p>Be a devil or a demon...<br />...or an angel if you dare!</p>
 			<img src="./images/doll-candles.gif" alt="doll with candles" />
 		</div>
 		<div class="win98 window" style="width: 300px">
 			<div class="title-bar">
-				<div class="title-bar-text">Friendship Test!</div>
+				<div class="title-bar-text">Friendship Test</div>
 				<div class="title-bar-controls">
 					<button aria-label="Minimize"></button>
 					<button aria-label="Maximize"></button>
@@ -35,7 +35,7 @@
 				</div>
 			</div>
 			<div class="window-body">
-				<p>Are you gonna come to the party?</p>
+				<p>Are you coming to the party???</p>
 				<section class="field-row">
 					<a href="https://youtu.be/_xJUCsyMQes?feature=shared&t=42" target="_blank">
 						<button>Ofc</button>
@@ -62,15 +62,8 @@
 		@return math.div($pxValue, 16px) * 1rem;
 	}
 	@font-face {
-		font-family: 'crystopia';
-		src: url('./fonts/crystopia.ttf');
-		font-weight: 400;
-		font-style: normal;
-		font-display: swap;
-	}
-	@font-face {
-		font-family: 'mr-monstar';
-		src: url('./fonts/mr-monstar.ttf');
+		font-family: 'old-english-gothic';
+		src: url('./fonts/old-english-gothic.otf');
 		font-weight: 400;
 		font-style: normal;
 		font-display: swap;
@@ -84,7 +77,7 @@
 		background: rgba(0, 0, 0, 0.3) url('./images/ghosts.png');
 		background-blend-mode: darken;
 		min-height: 100vh;
-		color: white;
+		color: ghostwhite;
 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 		header,
@@ -131,7 +124,7 @@
 			}
 
 			.abh {
-				font-family: cursive;
+				font-family: old-english-gothic;
 				font-size: rem(22px);
 				padding: rem(16px) 0 0 0;
 				margin-bottom: -10px;
@@ -161,6 +154,7 @@
 					color: black;
 
 					p {
+						font-size: rem(12px);
 						line-height: 1.5;
 						margin: rem(16px) 0;
 					}
@@ -168,16 +162,21 @@
 					.field-row {
 						justify-content: flex-end;
 
-						button a {
+						a {
 							color: inherit;
 							text-decoration: none;
 							cursor: default;
+
+							button {
+								font-size: rem(12px);
+							}
 						}
 					}
 				}
 			}
 
-			.date, .attire {
+			.date,
+			.attire {
 				width: 600px;
 				max-width: 100%;
 				margin: 0 rem(32px) rem(32px);
@@ -185,9 +184,10 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-evenly;
+				font-family: old-english-gothic;
 
 				p {
-					font-size: rem(30px);
+					font-size: rem(36px);
 					text-align: center;
 					padding-left: rem(4px);
 				}
@@ -198,7 +198,7 @@
 			padding: rem(6px);
 			background: rgba(0, 0, 0, 0.5);
 			color: white;
-			font-family: crystopia;
+			font-family: old-english-gothic;
 			font-size: rem(24px);
 
 			.text {
