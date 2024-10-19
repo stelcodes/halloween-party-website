@@ -21,6 +21,7 @@
 			<img src="./images/doll-orb.gif" alt="doll with orb" />
 			<p>Saturday October 26th<br />8 PM - ???</p>
 		</div>
+		<img class="chain-divider" src="./images/chain-divider.gif" alt="chain" />
 		<div class="attire">
 			<p>Be a devil or a demon...<br />...or an angel if you dare!</p>
 			<img src="./images/doll-candles.gif" alt="doll with candles" />
@@ -175,11 +176,16 @@
 				}
 			}
 
+      .chain-divider {
+        max-width: 100%;
+        padding: 0 rem(8px);
+      }
+
 			.date,
 			.attire {
 				width: 600px;
 				max-width: 100%;
-				margin: 0 rem(32px) rem(32px);
+				margin: rem(16px) rem(32px) rem(16px);
 				padding: rem(16px);
 				display: flex;
 				align-items: center;
