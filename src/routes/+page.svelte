@@ -90,6 +90,9 @@
 	a {
 		color: ghostwhite;
 	}
+  :global(body) {
+    background: #070707;
+  }
 	.app-container {
 		display: flex;
 		flex-direction: column;
@@ -130,9 +133,11 @@
 					}
 				}
 				.tcwp {
-					flex: 1 1 auto;
-					width: 100%;
-					max-width: 700px;
+					flex: 0 1 auto;
+          // An initial setting on flex items is min-width: auto. This means that a flex item, by default, cannot shrink below the size of its content.
+          min-width: 0;
+					width: 500px;
+					max-width: 100%;
 					padding: rem(10px);
 					// height: auto;
 				}
