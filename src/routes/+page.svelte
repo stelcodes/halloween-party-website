@@ -17,6 +17,14 @@
 	</header>
 	<main>
 		<h1>hell at bitch house</h1>
+		<div class="date">
+			<img src="./images/doll-orb.gif" alt="doll with orb" />
+			<p>Saturday October 26th<br />8 PM - ???</p>
+		</div>
+		<div class="attire">
+			<p>Wear a devlish costume...<br />... or be an <em>angel</em> if you dare!</p>
+			<img src="./images/doll-candles.gif" alt="doll with candles" />
+		</div>
 		<div class="win98 window" style="width: 300px">
 			<div class="title-bar">
 				<div class="title-bar-text">Friendship Test!</div>
@@ -126,12 +134,12 @@
 				font-family: cursive;
 				font-size: rem(22px);
 				padding: rem(16px) 0 0 0;
-        margin-bottom: -10px;
+				margin-bottom: -10px;
 			}
 
-      .bones-divider {
-        max-width: 100%;
-      }
+			.bones-divider {
+				max-width: 100%;
+			}
 		}
 
 		main {
@@ -143,6 +151,7 @@
 			}
 
 			.win98 {
+				margin: rem(16px) 0;
 				width: 500px;
 				max-width: 100%;
 				.title-bar {
@@ -168,17 +177,19 @@
 				}
 			}
 
-			.date {
-				width: 700px;
+			.date, .attire {
+				width: 600px;
 				max-width: 100%;
-				background: rgba(0, 0, 0, 0.5);
 				margin: 0 rem(32px) rem(32px);
 				padding: rem(16px);
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
 
 				p {
 					font-size: rem(30px);
 					text-align: center;
-					padding: rem(4px) 0;
+					padding-left: rem(4px);
 				}
 			}
 		}
