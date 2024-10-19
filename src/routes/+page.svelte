@@ -26,6 +26,14 @@
 			<p>Be a devil or a demon...<br />...or an angel if you dare!</p>
 			<img src="./images/doll-candles.gif" alt="doll with candles" />
 		</div>
+		<!-- <img class="blood-divider" src="./images/blood-divider.gif" alt="chain" /> -->
+		<div class="candles">
+			<img src="./images/candle.gif" alt="candle" />
+			<img src="./images/candle.gif" alt="candle" />
+			<img src="./images/candle.gif" alt="candle" />
+			<img src="./images/candle.gif" alt="candle" />
+			<img src="./images/candle.gif" alt="candle" />
+		</div>
 		<div class="win98 window" style="width: 300px">
 			<div class="title-bar">
 				<div class="title-bar-text">Friendship Test</div>
@@ -145,7 +153,7 @@
 			}
 
 			.win98 {
-				margin: rem(16px) 0;
+				margin: rem(64px) 0;
 				width: 500px;
 				max-width: 100%;
 				.title-bar {
@@ -176,10 +184,11 @@
 				}
 			}
 
-      .chain-divider {
-        max-width: 100%;
-        padding: 0 rem(8px);
-      }
+			.chain-divider,
+			.blood-divider {
+				max-width: 100%;
+				padding: 0 rem(8px);
+			}
 
 			.date,
 			.attire {
@@ -198,6 +207,19 @@
 					padding-left: rem(4px);
 				}
 			}
+
+      .candles {
+        margin-top: rem(24px);
+        width: 800px;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        img {
+          display: block;
+          width: 40px;
+        }
+      }
 		}
 		footer {
 			flex: 0 0 auto;
