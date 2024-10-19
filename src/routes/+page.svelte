@@ -3,6 +3,10 @@
 	import '98.css';
 </script>
 
+<svelte:head>
+	<title>HELL @ bitch house</title>
+</svelte:head>
+
 <div class="app-container">
 	<header>
 		<div class="presents">
