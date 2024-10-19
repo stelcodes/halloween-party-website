@@ -34,25 +34,28 @@
 			<img src="./images/candle.gif" alt="candle" />
 			<img src="./images/candle.gif" alt="candle" />
 		</div>
-		<div class="win98 window" style="width: 300px">
-			<div class="title-bar">
-				<div class="title-bar-text">Friendship Test</div>
-				<div class="title-bar-controls">
-					<button aria-label="Minimize"></button>
-					<button aria-label="Maximize"></button>
-					<button aria-label="Close"></button>
+		<div class="quiz">
+			<img class="dancing" src="./images/dress.gif" alt="girl dancing" />
+			<div class="win98 window" style="width: 300px">
+				<div class="title-bar">
+					<div class="title-bar-text">Friendship Test</div>
+					<div class="title-bar-controls">
+						<button aria-label="Minimize"></button>
+						<button aria-label="Maximize"></button>
+						<button aria-label="Close"></button>
+					</div>
 				</div>
-			</div>
-			<div class="window-body">
-				<p>Are you coming to the party???</p>
-				<section class="field-row">
-					<a href="https://youtu.be/_xJUCsyMQes?feature=shared&t=42" target="_blank">
-						<button>Ofc</button>
-					</a>
-					<a href="https://www.youtube.com/watch?v=O04nsyB8gqA" target="_blank">
-						<button>FUCK NO</button>
-					</a>
-				</section>
+				<div class="window-body">
+					<p>Are you coming to the party???</p>
+					<section class="field-row">
+						<a href="https://youtu.be/_xJUCsyMQes?feature=shared&t=42" target="_blank">
+							<button>Ofc</button>
+						</a>
+						<a href="https://www.youtube.com/watch?v=O04nsyB8gqA" target="_blank">
+							<button>FUCK NO</button>
+						</a>
+					</section>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -152,38 +155,6 @@
 				display: none;
 			}
 
-			.win98 {
-				margin: rem(64px) 0;
-				width: 500px;
-				max-width: 100%;
-				.title-bar {
-					background: linear-gradient(90deg, #400, #a60000);
-				}
-				.window-body {
-					color: black;
-
-					p {
-						font-size: rem(12px);
-						line-height: 1.5;
-						margin: rem(16px) 0;
-					}
-
-					.field-row {
-						justify-content: flex-end;
-
-						a {
-							color: inherit;
-							text-decoration: none;
-							cursor: default;
-
-							button {
-								font-size: rem(12px);
-							}
-						}
-					}
-				}
-			}
-
 			.chain-divider,
 			.blood-divider {
 				max-width: 100%;
@@ -208,18 +179,64 @@
 				}
 			}
 
-      .candles {
-        margin-top: rem(24px);
-        width: 800px;
-        max-width: 100%;
-        display: flex;
-        justify-content: space-around;
+			.candles {
+				margin-top: rem(24px);
+				width: 800px;
+				max-width: 100%;
+				display: flex;
+				justify-content: space-around;
 
-        img {
-          display: block;
-          width: 40px;
-        }
-      }
+				img {
+					display: block;
+					width: 40px;
+				}
+			}
+
+			.quiz {
+        padding: 0 rem(16px);
+				width: 800px;
+				max-width: 100%;
+				display: flex;
+        justify-content: center;
+
+				img.dancing {
+					object-fit: contain;
+					width: 70px;
+					margin-right: rem(12px);
+				}
+
+				.win98 {
+					margin: rem(64px) 0;
+          flex: 0 1 300px;
+					max-width: 100%;
+					.title-bar {
+						background: linear-gradient(90deg, #400, #a60000);
+					}
+					.window-body {
+						color: black;
+
+						p {
+							font-size: rem(12px);
+							line-height: 1.5;
+							margin: rem(16px) 0;
+						}
+
+						.field-row {
+							justify-content: flex-end;
+
+							a {
+								color: inherit;
+								text-decoration: none;
+								cursor: default;
+
+								button {
+									font-size: rem(12px);
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 		footer {
 			flex: 0 0 auto;
