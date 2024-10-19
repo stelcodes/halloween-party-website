@@ -6,36 +6,36 @@
 <div class="app-container">
 	<header>
 		<div class="presents">
-			<img class="skull" alt="skull" src="./images/skull-spin.gif" />
-			<img class="tcwp" alt="the collective womb presents" src="./images/tcwp.gif" />
-			<img class="skull" alt="skull" src="./images/skull-spin.gif" />
+			<img class="skull" alt="skull" src="/images/skull-spin.gif" />
+			<img class="tcwp" alt="the collective womb presents" src="/images/tcwp.gif" />
+			<img class="skull" alt="skull" src="/images/skull-spin.gif" />
 		</div>
-		<!-- <img class="divider" alt="barbed wire" src="./images/barbed-wire-divider.png" /> -->
-		<img class="hell" alt="hell" src="./images/hell.gif" />
+		<!-- <img class="divider" alt="barbed wire" src="/images/barbed-wire-divider.png" /> -->
+		<img class="hell" alt="hell" src="/images/hell.gif" />
 		<div class="abh">@ bitch house</div>
-		<img class="bones-divider" src="./images/bones-divider.png" alt="bones" />
+		<img class="bones-divider" src="/images/bones-divider.png" alt="bones" />
 	</header>
 	<main>
 		<h1>hell at bitch house</h1>
 		<div class="date">
-			<img src="./images/doll-orb.gif" alt="doll with orb" />
+			<img src="/images/doll-orb.gif" alt="doll with orb" />
 			<p>Saturday October 26th<br />8 PM - ???</p>
 		</div>
-		<img class="chain-divider" src="./images/chain-divider.gif" alt="chain" />
+		<img class="chain-divider" src="/images/chain-divider.gif" alt="chain" />
 		<div class="attire">
 			<p>Be a devil or a demon...<br />...or an angel if you dare!</p>
-			<img src="./images/doll-candles.gif" alt="doll with candles" />
+			<img src="/images/doll-candles.gif" alt="doll with candles" />
 		</div>
-		<!-- <img class="blood-divider" src="./images/blood-divider.gif" alt="chain" /> -->
+		<!-- <img class="blood-divider" src="/images/blood-divider.gif" alt="chain" /> -->
 		<div class="candles">
-			<img src="./images/candle.gif" alt="candle" />
-			<img src="./images/candle.gif" alt="candle" />
-			<img src="./images/candle.gif" alt="candle" />
-			<img src="./images/candle.gif" alt="candle" />
-			<img src="./images/candle.gif" alt="candle" />
+			<img src="/images/candle.gif" alt="candle" />
+			<img src="/images/candle.gif" alt="candle" />
+			<img src="/images/candle.gif" alt="candle" />
+			<img src="/images/candle.gif" alt="candle" />
+			<img src="/images/candle.gif" alt="candle" />
 		</div>
 		<div class="quiz">
-			<img class="dancing" src="./images/dress.gif" alt="girl dancing" />
+			<img class="dancing" src="/images/dress.gif" alt="girl dancing" />
 			<div class="win98 window" style="width: 300px">
 				<div class="title-bar">
 					<div class="title-bar-text">Friendship Test</div>
@@ -62,7 +62,7 @@
 	<footer>
 		<div class="text">
 			<p>codes by <a href="mailto:hello@stelclementine.com">stel clementine</a></p>
-      <img src='./images/skull-sprite.gif' alt="pink skull"/>
+			<img src="/images/skull-sprite.gif" alt="pink skull" />
 		</div>
 	</footer>
 </div>
@@ -75,7 +75,7 @@
 	}
 	@font-face {
 		font-family: 'old-english-gothic';
-		src: url('./fonts/old-english-gothic.otf');
+		src: url('/fonts/old-english-gothic.otf');
 		font-weight: 400;
 		font-style: normal;
 		font-display: swap;
@@ -83,13 +83,13 @@
 	* {
 		cursor: url('https://cur.cursors-4u.net/holidays/hol-4/hol333.png'), pointer !important;
 	}
-  a {
-    color: ghostwhite;
-  }
+	a {
+		color: ghostwhite;
+	}
 	.app-container {
 		display: flex;
 		flex-direction: column;
-		background: rgba(0, 0, 0, 0.3) url('./images/ghosts.png');
+		background: rgba(0, 0, 0, 0.3) url('/images/ghosts.png');
 		background-blend-mode: darken;
 		min-height: 100vh;
 		color: ghostwhite;
@@ -158,8 +158,7 @@
 				display: none;
 			}
 
-			.chain-divider,
-			.blood-divider {
+			.chain-divider {
 				max-width: 100%;
 				padding: 0 rem(8px);
 			}
@@ -196,11 +195,11 @@
 			}
 
 			.quiz {
-        padding: 0 rem(16px);
+				padding: 0 rem(16px);
 				width: 800px;
 				max-width: 100%;
 				display: flex;
-        justify-content: center;
+				justify-content: center;
 
 				img.dancing {
 					object-fit: contain;
@@ -210,7 +209,7 @@
 
 				.win98 {
 					margin: rem(64px) 0;
-          flex: 0 1 300px;
+					flex: 0 1 300px;
 					max-width: 100%;
 					.title-bar {
 						background: linear-gradient(90deg, #400, #a60000);
@@ -258,9 +257,9 @@
 				}
 			}
 
-      img {
-        padding-bottom: rem(6px);
-      }
+			img {
+				padding-bottom: rem(6px);
+			}
 		}
 	}
 </style>
