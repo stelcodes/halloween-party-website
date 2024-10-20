@@ -84,9 +84,6 @@
 		font-style: normal;
 		font-display: swap;
 	}
-	* {
-		cursor: url('https://cur.cursors-4u.net/holidays/hol-4/hol333.png'), pointer !important;
-	}
 	a {
 		color: ghostwhite;
 	}
